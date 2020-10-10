@@ -1,6 +1,4 @@
 
-import numpy as np
-
 class Linear:
     def __init__(self, array):
         self.shape = self._find_shape(array)
@@ -89,7 +87,7 @@ def projection(arr1, arr2):
     arr1_ = np.array(arr1)
     arr2_ = np.array(arr2)
     numerator = arr1_.dot(arr2_)
-    demoninator = arr2_.dot(arr2_)
+    denominator = arr2_.dot(arr2_)
     return numerator/denominator
 
 
