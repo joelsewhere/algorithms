@@ -26,7 +26,7 @@ class DecisionTreeClassifier:
         self._validate(X)
         predictions = []
         for idx in X.index:
-            y_hat = self._descend_tree(tree.tree, X.loc[idx])
+            y_hat = self._descend_tree(self.tree, X.loc[idx])
             predictions.append(y_hat)
 
         return predictions
